@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mild Peril</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="main.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game-title">
+            <h1>Mild Peril</h1>
+            <h3>Where danger is manageable... mostly.</h3>
+        </div>
+        <section class="choice">
+            <form action="createHero" class="createHeroForm">
+                <h2 class="party">Your party : 0/4</h2>
+                <input type="text" id ="heroName" placeholder="Name of your hero">
+                <select name="heroChoice" id="heroChoice">
+                    <option value="Nothing" selected disabled>- Choose your class</option>
+                    <option value="Paladin">Paladin</option>
+                    <option value="Mage">Mage</option>
+                    <option value="Healer">Healer</option>
+                    <option value="Rogue">Rogue</option>
+                </select>
+                <input type="submit" id="submit" value="Add hero to your party">
+            </form>
+
+
+            <div class="hero-info">
+                <div class="hero-img">
+                    <img src="img/entity-default.png" alt="what?">
+                </div>
+                <div class="hero-txt">
+                    <h2></h2>
+                    <div class="ligneStat">
+                        <img src="img/icone/damage-physical.png" alt="img">
+                        <h2>Attack : <span></span></h2>
+                    </div>
+                    <div class="ligneStat">
+                        <img src="img/icone/damage-magic.png" alt="img">
+                        <h2>Magic attack : <span></span></h2>
+                    </div>
+                    <div class="ligneStat">
+                        <img src="img/icone/agility.png" alt="img">
+                        <h2>Agility : <span></span></h2>
+                    </div>
+                    <div class="ligneStat">
+                        <img src="img/icone/defense-physical.png" alt="img">
+                        <h2>Defense : <span></span></h2>
+                    </div>
+                    <div class="ligneStat">
+                        <img src="img/icone/defense-magic.png" alt="img">
+                        <h2>Magique Defense : <span></span></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="message dnone">
+            
+        </div>
+        <section class="battle">
+            <div class="heroesContainer"></div>
+            <div class="enemiesContainer"></div>
+        </section>
+        <div class="actionButtonContainer">
+            <h3>Choose your action</h3>
+            <div class="actionButtonWrapper">
+                <div class="actionButton" id="attackButton"></div>
+                <div class="actionButton" id="MagickAttackButton"></div>
+                <div class="actionButton" id="HealButton"></div>
+            </div>
+        </div>        
+    </div>
+    <!-- <div class="over-wrapper">
+        <div class="its-over">
+            The evil is vanquished! <br> For now..<br> Probably...<br>
+        </div>
+    </div> -->
+</body>
+</html>
