@@ -32,7 +32,7 @@ const infoHero = [
         defense: 80,
         defenseMagique: 60,
         isGentil: true,
-        img : "../img/h-paladin.png"
+        img : "img/h-paladin.png"
     },
     {
         classe: "Mage",
@@ -44,7 +44,7 @@ const infoHero = [
         defense: 25,
         defenseMagique: 50,
         isGentil: true,
-        img : "../img/h-mage2.png"
+        img : "img/h-mage2.png"
     },
     {
         classe: "Healer",
@@ -56,7 +56,7 @@ const infoHero = [
         defense: 30,
         defenseMagique: 70,
         isGentil: true,
-        img : "../img/h-healer2.png"
+        img : "img/h-healer2.png"
     },
     {
         
@@ -69,7 +69,7 @@ const infoHero = [
         defense: 35,
         defenseMagique: 25,
         isGentil: true,
-        img : "../img/h-rogue1.png"
+        img : "img/h-rogue1.png"
           
     }
 
@@ -88,7 +88,7 @@ const infoEnnemie =[
         defense: 60,
         defenseMagique: 20,
         isGentil: false,
-        img : "../img/e-zombie2.png"
+        img : "img/e-zombie2.png"
     },
     {   classe : "Werewolf",
         attaque: 70,
@@ -99,7 +99,7 @@ const infoEnnemie =[
         defense: 30,
         defenseMagique: 10,
         isGentil: false,
-        img : "../img/e-werewolf1.png"
+        img : "img/e-werewolf1.png"
     },
     {
         classe : "Sorcerer",
@@ -111,7 +111,7 @@ const infoEnnemie =[
         defense: 20,
         defenseMagique: 60,
         isGentil: false,
-        img : "../img/e-sorcerer.png"
+        img : "img/e-sorcerer.png"
     },
     {
         classe : "Gobelin",
@@ -123,7 +123,7 @@ const infoEnnemie =[
         defense: 25,
         defenseMagique: 20,
         isGentil: false,
-        img : "../img/e-goblin1.png"
+        img : "img/e-goblin1.png"
     },
     {
         classe : "Skeleton",
@@ -135,7 +135,7 @@ const infoEnnemie =[
         defense: 40,
         defenseMagique: 50,
         isGentil: false,
-        img : "../img/e-skeleton1.png"
+        img : "img/e-skeleton1.png"
     },
     {
         classe : "Ghost",
@@ -147,7 +147,7 @@ const infoEnnemie =[
         defense: 10,
         defenseMagique: 85,
         isGentil: false,
-        img : "../img/e-ghost5.png"
+        img : "img/e-ghost5.png"
     }
 ]
 
@@ -515,10 +515,6 @@ heroesContainer.addEventListener("click",(e)=>{
 
 heroChoice.addEventListener("change",(event)=>{
     event.preventDefault();
-
-    
-    
-    
     for(let element of infoHero){
         if(element.classe == heroChoice.value){
             heroImg.setAttribute("src",element.img);
