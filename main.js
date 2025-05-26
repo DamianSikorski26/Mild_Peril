@@ -344,27 +344,27 @@ function getEntityInfo(object){
     //
     let atq = document.createElement("span");
     atq.innerText = `${object.atq}`;
-    atqContainer.append(getImg("../img/icone/damage-physical.png"),atq);
+    atqContainer.append(getImg("img/icone/damage-physical.png"),atq);
 
     //
     let atqMag = document.createElement("span");
     atqMag.innerText = `${object.magie}`;
-    atqMagContainer.append(getImg("../img/icone/damage-magic.png"),atqMag);
+    atqMagContainer.append(getImg("img/icone/damage-magic.png"),atqMag);
 
     //
     let def = document.createElement("span");
     def.innerText = `${object.def}`;
-    defenseContainer.append(getImg("../img/icone/defense-physical.png"),def);
+    defenseContainer.append(getImg("img/icone/defense-physical.png"),def);
 
     //
     let defMag = document.createElement("span");
     defMag = `${object.defMag}`;
-    defenseMagiqueContainer.append(getImg("../img/icone/defense-magic.png"),defMag);
+    defenseMagiqueContainer.append(getImg("img/icone/defense-magic.png"),defMag);
 
     //
     let agility = document.createElement("span");
     agility.innerText = `${(object.agilite)}`;
-    agilityContainer.append(getImg("../img/icone/agility.png"),agility);
+    agilityContainer.append(getImg("img/icone/agility.png"),agility);
 
     //On ajoute tout les element au stats container
     statContainer.append(name,atqContainer,atqMagContainer,defenseContainer,defenseMagiqueContainer,agilityContainer);
