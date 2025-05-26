@@ -209,6 +209,7 @@ class Entite{
         let reduction = baseDefense * 0.8;
         let damage = baseDamage - reduction;
         if (damage < 0){
+            message.innerHTML += ` Attaque trop basse pour faire des dégats !<br>`;
             return
             
         } 
@@ -222,7 +223,6 @@ class Entite{
         if(this.isGentil){
             let index = listHero.indexOf(this);
             let div = heroesContainer.querySelector(`[data-index="${index}"] .imgContainer img`);
-            
             div.classList.add("hit");
         }
         else{
@@ -282,7 +282,7 @@ function createEntity(liste,classe,name,info){
 //fonction qui choisit quel méchant mettre dans la liste des méchant et renvoie une valuer qui sera utilisé par la fonction createEntity()
 
 function randomEnnemyCreator(){
-    let index = parseInt(Math.floor(Math.random()*(infoEnnemie.length - 1)));
+    let index = parseInt(Math.floor(Math.random()*(infoEnnemie.length)));
     console.log(index);
     return infoEnnemie[index].classe;
 
